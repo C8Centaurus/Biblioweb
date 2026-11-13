@@ -1,0 +1,95 @@
+/* =================================================
+   BIBLIOWEB · ESTILOS COMPARTIDOS (navegación, pie y colores)
+   Se carga DESPUÉS de base.css en todas las páginas.
+   Une la paleta del sitio (verde azulado de base.css) con los
+   componentes de Bootstrap, para que todo se vea igual en
+   index, catálogo, login y admin, en tema claro y oscuro.
+   ================================================= */
+
+/* 1. Color primario de Bootstrap = color propio de BiblioWeb */
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #1f6f6b;
+  --bs-primary-rgb: 31, 111, 107;
+  --bs-primary-text-emphasis: #0c2c2b;
+  --bs-primary-bg-subtle: #d2e2e1;
+  --bs-primary-border-subtle: #a5c5c4;
+  --bs-link-color: #1f6f6b;
+  --bs-link-color-rgb: 31, 111, 107;
+  --bs-link-hover-color: #185856;
+  --bs-link-hover-color-rgb: 24, 88, 86;
+}
+[data-bs-theme="dark"] {
+  --bs-primary: #2fa39d;
+  --bs-primary-rgb: 47, 163, 157;
+  --bs-primary-text-emphasis: #82c8c4;
+  --bs-primary-bg-subtle: #09211f;
+  --bs-primary-border-subtle: #13413f;
+  --bs-link-color: #2fa39d;
+  --bs-link-color-rgb: 47, 163, 157;
+  --bs-link-hover-color: #82c8c4;
+  --bs-link-hover-color-rgb: 130, 200, 196;
+}
+
+/* 2. Botones: .btn-primary y .btn-1 se ven igual que .btn-biblio */
+.btn-primary,
+.btn-1 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #1f6f6b;
+  --bs-btn-border-color: #1f6f6b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #185856;
+  --bs-btn-hover-border-color: #185856;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #144745;
+  --bs-btn-active-border-color: #144745;
+  --bs-btn-focus-shadow-rgb: 31, 111, 107;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--bw-acento);
+  --bs-btn-border-color: var(--bw-acento);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1f6f6b;
+  --bs-btn-hover-border-color: #1f6f6b;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #185856;
+  --bs-btn-active-border-color: #185856;
+  --bs-btn-focus-shadow-rgb: 31, 111, 107;
+}
+
+/* 3. Barra de navegación común */
+.navbar { box-shadow: 0 2px 4px rgba(0, 0, 0, .04); }
+.navbar-nav .nav-link { transition: color .2s ease-in-out; }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--bw-acento) !important;
+}
+.navbar-nav .nav-link.active { font-weight: 600; }
+
+/* 4. Pie de página común */
+.footer-biblio .footer-brand { color: #2fa39d; }
+.footer-biblio a { transition: color .2s ease-in-out; }
+.footer-biblio a:hover { color: #fff !important; }
+
+/* 5. Tarjetas de libros (inicio y catálogo): efecto al pasar el mouse */
+.card-libro {
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+.card-libro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12) !important;
+}
+
+/* 6. Tablas: cabecera que se adapta al tema claro/oscuro */
+.table > thead {
+  --bs-table-bg: var(--bs-tertiary-bg);
+  --bs-table-color: var(--bs-body-color);
+}
+
+/* Evita barra de desplazamiento horizontal por elementos decorativos */
+body { overflow-x: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card-libro, .navbar-nav .nav-link, .footer-biblio a { transition: none; }
+  .card-libro:hover { transform: none; }
+}
