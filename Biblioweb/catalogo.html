@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="/Biblioweb/js/tema.js"></script>
+    <link rel="stylesheet" href="/Biblioweb/css/catalogo.css">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="navbar navbar-expand-md border-bottom bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">BiblioWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="login.html">Administración</a></li>
+                    </ul>
+                    <button id="btn-tema" type="button" class="btn btn-outline-secondary btn-sm">🌙 Oscuro</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <h1 class="d-flex justify-content-center display-3 " style="color: #583101;"><strong>CATÁLOGO DE
+                        LIBROS</strong></h1>
+                <p class="d-flex justify-content-center" style="color: #a47148;">Explora nuestra colección de Narrativa,
+                    Tecnología y Ciencia.
+                    Puedes solicitar un préstamo sin
+                    necesidad de
+                    iniciar sesión.</p>
+                <input class="input" type="text" placeholder="Libro de su preferencia">
+            </div>
+        </div>
+
+    </header>
+
+    <main class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/dexter.jpeg" class="card-img-top"
+                            alt="Portada del libro Cien años de soledad" style="height: 400px;">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning align-self-start mb-4">Narrativa</span>
+                            <h5 class="card-title">Dexter
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Jeff Lindsay
+                            </figcaption>
+                            <p class="card-text">La doble vida de Dexter Morgan, un forense de la policía de Miami
+                                que canaliza sus impulsos homicidas bajo un estricto código moral.</p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bdy" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/dqdlm.jpg" class="card-img-top"
+                            alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                        <div class="card-body">
+                            <span class="badge text-bg-warning align-self-start mb-4">Narrativa</span>
+                            <h5 class="card-title">Don Quijote de la Mancha
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Miguel De Cervantes
+                            </figcaption>
+                            <p class="card-text">Las aventuras de un hidalgo que confunde los libros de caballerías con
+                                la realidad, acompañado por su fiel escudero Sancho Panza.</p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bdy" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/cc.jpeg" class="card-img-top"
+                            alt="Portada del libro codigo limpio" style="height: 400px; ">
+                        <div class="card-body">
+                            <span class="badge text-bg-success align-self-start mb-4">Tecnología</span>
+                            <h5 class="card-title">Clean Code
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Robert C. Martin
+                            </figcaption>
+                            <p class="card-text">Principios y buenas prácticas para escribir código legible, mantenible
+                                y profesional en el ambiente de trabajo.</p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row mt-5 mb-5">
+                <div class="col-4">
+                    <div class="card bdy" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/ej.jpeg" class="card-img-top"
+                            alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                        <div class="card-body">
+                            <span class="badge text-bg-success align-self-start mb-2">Tecnología</span>
+                            <h5 class="card-title">Eloquent JavaScript
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Marijn Haverbeke
+                            </figcaption>
+                            <p class="card-text">Una introducción moderna a JavaScript, desde los
+                                conceptos básicos
+                                hasta la programación en el navegador.</p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bdy" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/csc.jpeg" class="card-img-top"
+                            alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                        <div class="card-body">
+                            <span class="badge text-bg-primary align-self-start mb-2">Ciencia</span>
+                            <h5 class="card-title">Cosmos
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Carl Sagan
+                            </figcaption>
+                            <p class="card-text">Un recorrido divulgativo por el universo, desde el
+                                origen de las
+                                estrellas hasta el lugar de la humanidad en el cosmos.</p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <div class="card bdy" style="width: 22rem;">
+                        <img src="/Biblioweb/imagenes/bhdt.jpeg" class="card-img-top"
+                            alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                        <div class="card-body">
+                            <span class="badge text-bg-primary align-self-start mb-2">Ciencia</span>
+                            <h5 class="card-title">Breve historia del tiempo
+                            </h5>
+                            <figcaption class="blockquote-footer mt-2">
+                                Stephen Hawking
+                            </figcaption>
+                            <p class="card-text">Una explicación accesible de los agujeros negros, el
+                                Big
+                                Bang y la
+                                naturaleza del espacio y el tiempo.
+                            </p>
+                            <button class="container btn-1" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Solicitar préstamo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <section class="carousel-container carrusel">
+        <section class="carousel-wrapper" style="margin-right: 60px;">
+
+            <aside class="buttons">
+
+                <div class="carousel-btn btn1 shadow-sm rounded">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1">
+                        <img src="/Biblioweb/imagenes/bhdt.jpeg" class="d-block w-100" alt="...">
+                    </button>
+                </div>
+
+                <div class="carousel-btn btn2 shadow-sm rounded">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="">
+                        <img src="/Biblioweb/imagenes/dexter.jpeg" class="d-block w-100" alt="...">
+                    </button>
+                </div>
+
+                <div class="carousel-btn btn3 shadow-sm rounded">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        <img src="/Biblioweb/imagenes/dqdlm.jpg" class="d-block" alt="...">
+                    </button>
+                </div>
+
+                <div class="carousel-btn btn4 shadow-sm rounded">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                        <img src="/Biblioweb/imagenes/ej.jpeg" class="d-block" alt="...">
+                    </button>
+                </div>
+            </aside>
+
+            <aside class="carousel" id="carouselExampleIndicators"
+                class="carousel slide carousel-wrapper d-flex flex-row" data-bs-ride="carousel">
+                <section class="carousel-inner">
+
+                    <div class="carousel-box box1 carousel-item active  rounded">
+                        <div class="card2 bdy" style="width: 22rem;">
+                            <img src="/Biblioweb/imagenes/bhdt.jpeg" class="card-img-top"
+                                alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                            <div class="card-body">
+                                <span class="badge text-bg-primary align-self-start mb-2">Ciencia</span>
+                                <h5 class="card-title">Breve historia del tiempo
+                                </h5>
+                                <figcaption class="blockquote-footer mt-2">
+                                    Stephen Hawking
+                                </figcaption>
+                                <p class="card-text">Una explicación accesible de los agujeros negros, el
+                                    Big
+                                    Bang y la
+                                    naturaleza del espacio y el tiempo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-box box2 carousel-item rounded">
+                        <div class="card2" style="width: 22rem;">
+                            <img src="/Biblioweb/imagenes/dexter.jpeg" class="card-img-top"
+                                alt="Portada del libro Cien años de soledad" style="height: 400px;">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning align-self-start mb-4">Narrativa</span>
+                                <h5 class="card-title">Dexter
+                                </h5>
+                                <figcaption class="blockquote-footer mt-2">
+                                    Jeff Lindsay
+                                </figcaption>
+                                <p class="card-text">La doble vida de Dexter Morgan, un forense de la policía de
+                                    Miami
+                                    que canaliza sus impulsos homicidas bajo un estricto código moral.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-box box3 carousel-item rounded">
+                        <div class="card2 bdy" style="width: 22rem;">
+                            <img src="/Biblioweb/imagenes/dqdlm.jpg" class="card-img-top"
+                                alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning align-self-start mb-4">Narrativa</span>
+                                <h5 class="card-title">Don Quijote de la Mancha
+                                </h5>
+                                <figcaption class="blockquote-footer mt-2">
+                                    Miguel De Cervantes
+                                </figcaption>
+                                <p class="card-text">Las aventuras de un hidalgo que confunde los libros de caballerías
+                                    con
+                                    la realidad, acompañado por su fiel escudero Sancho Panza.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-box  carousel-item rounded">
+                        <div class="card2 bdy" style="width: 22rem;">
+                            <img src="/Biblioweb/imagenes/ej.jpeg" class="card-img-top"
+                                alt="Portada del libro Don Quijote de la Mancha" style="height: 400px; ">
+                            <div class="card-body">
+                                <span class="badge text-bg-success align-self-start mb-2">Tecnología</span>
+                                <h5 class="card-title">Eloquent JavaScript
+                                </h5>
+                                <figcaption class="blockquote-footer mt-2">
+                                    Marijn Haverbeke
+                                </figcaption>
+                                <p class="card-text">Una introducción moderna a JavaScript, desde los
+                                    conceptos básicos
+                                    hasta la programación en el navegador.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </section>
+    </section>
+    <section>
+        <div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">TItu</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre del
+                                    solicitante:</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Ej: Arley">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo
+                                    electrónico:</label>
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Nombre@correo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Comentario:</label>
+                                <textarea class="form-control" id="message-text"
+                                    placeholder="¿Algo que quieras indicarnos?"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-1">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5 w-100">
+
+        <div class="container-fluid px-4 foot">
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-12 mb-4">
+
+                    <h5 class="fw-bold text-primary mb-2">
+                        <i class="bi bi-book-half me-2"></i>BiblioWeb
+                    </h5>
+
+                    <p class="text-white-50 small mb-0">
+                        Tu plataforma de referencia para explorar y gestionar lecturas técnicas en comunidad.
+                    </p>
+
+                </div>
+                <div class="col-12">
+
+                    <ul class="list-inline mb-3">
+
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-white-50 text-decoration-none">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item mx-3">
+                            <a href="pages/servicios.html" class="text-white-50 text-decoration-none">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="pages/acerca-de.html" class="text-white-50 text-decoration-none">
+                                Acerca de
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <p class="text-white-50 small mb-0">
+                        &copy; 2026 BiblioWeb - Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const exampleModal = document.getElementById('exampleModal')
+        if (exampleModal) {
+            exampleModal.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget
+                const recipient = button.getAttribute('data-bs-whatever')
+                const modalTitle = exampleModal.querySelector('.modal-title')
+                const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+                modalTitle.textContent = `Solicitud de préstamo`
+                modalBodyInput.value = recipient
+            })
+        }
+    </script>
+</body>
+
+</html>

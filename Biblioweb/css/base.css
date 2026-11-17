@@ -1,6 +1,6 @@
 :root {
-  --bw-acento: #1f6f6b;          /* verde azulado: color propio de BiblioWeb */
-  --bw-acento-oscuro: #2fa39d;   /* versión más clara para fondo oscuro */
+  --bw-acento: #1f6f6b;         
+  --bw-acento-oscuro: #2fa39d; 
 }
 [data-bs-theme="dark"] { --bw-acento: var(--bw-acento-oscuro); }
 
@@ -17,7 +17,6 @@ h1, h2, h3, .navbar-brand {
 }
 .navbar-brand { color: var(--bw-acento) !important; font-weight: 700; }
 
-/* Foco visible en ambos temas (criterio F02) */
 :focus-visible {
   outline: 3px solid var(--bw-acento);
   outline-offset: 2px;
@@ -27,7 +26,6 @@ h1, h2, h3, .navbar-brand {
   box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bw-acento) 30%, transparent);
 }
 
-/* Botón principal con el color del sitio */
 .btn-biblio {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1f6f6b;
@@ -39,7 +37,6 @@ h1, h2, h3, .navbar-brand {
   --bs-btn-active-border-color: #144745;
 }
 
-/* Tarjeta del login */
 .login-card { max-width: 420px; width: 100%; }
 
 @media (prefers-reduced-motion: reduce) {
